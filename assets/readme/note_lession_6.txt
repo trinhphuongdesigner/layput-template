@@ -1,0 +1,130 @@
+[NỘI DUNG ĐÃ HỌC]
+
+1. Mục đích responsive (@media)
+2. Giới thiệu Bootstrap, sử dụng layout Bootstrap để responsive
+3. Khái niệm Variable, khai báo và sử dụng. Global vs local variable
+4. Các hàm trong CSS (calc, min max)
+5. Hướng dẫn làm dự án cuối khóa
+
+
+
+
+
+// Đặt tên file tùm lum
+// Đặt tên class không có ý nghĩa
+// Style inline
+// Import sai css
+// Không format code đúng chuẩn
+
+ 
+---------------------------------
+
+
+
+1. Mục đích responsive (@media)
+  @media not|only screen and (max-width: 840px) {
+    CSS-Code;
+  }
+
+  mediatype gồm các thuộc tính hay sử dụng sau:
+    all: Dùng cho mọi thiết bị
+    print: Dùng cho máy in
+    screen: Dùng cho máy tính và các thiết bị smart phone
+
+  media featured thì gồm các thuộc tính sau:
+    aspect-ratio: Tỉ lệ giữa chiều rộng và chiều cao của viewport
+    min-aspect-ratio: Tỉ lệ tối thiểu giữa chiều rộng và chiều cao của viewport
+    max-aspect-ratio: Tỉ lệ tôi đa giữa chiều rộng và chiều cao của viewport
+    color: Số bits cho mỗi màu sắc của device
+    color-index: Số lượng màu sắc mà device có thể hiển thị
+    device-aspect-ratio: Tỉ lệ giữa chiều rộng và chiều cao của device
+    max-device-aspect-ratio: Tỉ lệ tối đa giữa chiều rộng và chiều cao của device
+    min-device-aspect-ratio: Tỉ lệ tối thiểu giữa chiều rộng và chiều cao của device
+    device-height: Chiều cao của device
+    device-width: Chiều rộng của device
+    height: Chiều cao của viewport
+    width: Chiều rộng của viewport
+    max-width: Chiều rộng tối đa của viewport
+    min-width: Chiều rộng tối thiểu của viewport
+    max-height: Chiều cao tối đa của viewport
+    min-height: Chiều cao tối thiểu của viewport
+    min-device-width: Chiều rộng tối thiểu của device
+    max-device-width: Chiều rộng tối đa của device
+    min-device-height: Chiều cao tối thiểu của device
+    max-device-height: Chiều cao tối đa của device
+    orientation: Định hướng của khung nhìn (xoay hoặc không xoay thiết bị)
+    resolution: Độ phân giải của thiết bị đầu ra (sử dụng dpi hoặc dpcm)
+
+  Device: Là thiết bị sử dụng website như Laptop, Desktop, Iphone, ..
+  Viewport: Là kích thước hiển thị của giao diện.
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  max-width: Cho tới màn hình có kích thước chiều ngang tối đa thì... (code sẽ chạy khi màn hình nhỏ hơn mức max-width)
+  min-width: Cho tới màn hình có kích thước chiều ngang tối thiểu thì... (code sẽ chạy khi màn hình lớn hơn mức min-width)
+
+  Mobile first
+
+  /*Smart phone nhỏ*/
+  @media screen and (min-width: 240px){
+      
+  }
+  /*Iphone(480 x 640)*/
+  @media screen and (min-width: 320px){
+      
+  }
+  /*Tablet nhỏ(480 x 640)*/
+  @media screen and (min-width: 480px){
+      
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (min-width: 768px){
+      
+  }
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (min-width: 1024px){
+    
+  }
+
+
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px){
+    
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px){
+      
+  }
+  /*Tablet nhỏ(480 x 640)*/
+  @media screen and (max-width: 480px){
+      
+  }
+  /*Iphone(480 x 640)*/
+  @media screen and (max-width: 320px){
+      
+  }
+  /*Smart phone nhỏ*/
+  @media screen and (max-width: 240px){
+      
+  }
+
+2. Giới thiệu Bootstrap, sử dụng layout Bootstrap để responsive
+  2 cách import:
+    - static: ý nghĩa các file => Compiled CSS and JS
+    - CDN: cơ chế cache
+  https://getbootstrap.com/docs/4.0/getting-started/download/
+
+3. Khái niệm Variable, khai báo và sử dụng. Global vs local variable
+
+4. Các hàm trong CSS (calc, min max)
+
+  Sự khác biệt giữa % và vw|vh => % lấy theo thằng cha, vvh-vw lấy theo khung nhìn (viewport)
+
+  min(<value-list>): chọn giá trị nhỏ nhất (âm nhất) từ danh sách các biểu thức được phân tách bằng dấu phẩy
+  max(<value-list>): chọn giá trị lớn nhất (dương nhất) từ danh sách các biểu thức được phân tách bằng dấu phẩy
+  clamp(<min>, <ideal>, <max>): kẹp một giá trị giữa giới hạn trên và giới hạn dưới, dựa trên giá trị lý tưởng đã đặt
+
+  min (1rem, 50%, 10vw), trình duyệt sẽ tính toán đơn vị tương đối nào trong số các đơn vị tương đối này là nhỏ nhất và sử dụng giá trị đó làm giá trị thực của kết quả.
+
+5. Hướng dẫn làm dự án cuối khóa

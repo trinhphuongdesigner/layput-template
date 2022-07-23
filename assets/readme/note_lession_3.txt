@@ -1,0 +1,60 @@
+[NỘI DUNG ĐÃ HỌC]
+
+1. Thẻ table.
+2. HTML semantic thông dụng: article, aside, header, footer, main, section, nav,...
+3. Phân chia thư mục chưa các file tài nguyên.
+4. Kiểm tra thông số thành phần bằng devtool + visbug.
+5. Những thuộc tính CSS thường dùng:
+  - Định dạng text (font, font decorate),
+  - Spacing (margin, padding, border)
+  - Vị trí (position),
+
+[Ý NGHĨA CỦA CÁC THUỘC TÍNH CSS]
+
+    font (size, family, weight, style): định dạng chữ
+    float: sử dụng để chuyển một phần tử sang góc trái hoặc phải của không gian bao quanh nó
+    color: định dạng màu sắc
+    line-height: định dạng chiều cao dòng
+    text-align: định dạng căn gióng vị trí tương đối của chữ (tương tự attributes align)
+    word-wrap: định dạng ngắt những từ quá dài
+    letter-spacing: định dạng khoảng cách giữa các chữ
+    white-space: xác định khoảng trắng có bên trong thành phần được xử lý như thế nào.
+    text-overflow: xử lý một đoạn text bị tràn ra ngoài phần tử chứa nó
+    text-decoration: định dạng các trang trí thêm cho text
+    outline: một đường kẻ xung quanh phần tử, nằm bên ngoài border để làm nổi bật phần tử.
+    display: định dạng kiểu hiển thị của các thẻ HTML trên website
+    visibility: xác định thành phần có được nhìn thấy hay không.
+    width: định dạng chiều ngang
+    height: định dạng chiều cao
+    margin: định dạng khoảng cách bên ngoài border
+    padding: định dạng khoảng cách bên ngoài trong border và bên ngoài content
+    background: định dạng nền
+    min/max-width: định dạng chiều rộng tối thiểu - tối đa
+    min/max-height: định dạng chiều cao tối thiểu - tối đa
+    position: định vị vị trí hiển thị của các phần tử thẻ HTML
+    top, right, bottom, left: đi cùng position để dịnh dạng vị trí trên của sổ trình duyệt
+    flex(direction, wrap, grow): định dạng hướng của main-axis để container sắp xếp các item.
+    align-items: điều chỉnh vị trí bắt đầu và căn chỉnh các item bên trong container theo dọc theo trục cross axis
+    justify-content: điều chỉnh vị trí bắt đầu và căn chỉnh các item bên trong container theo dọc theo trục main axis,
+    box-shadow: xử lý bóng đổ (shadow) cho thành phần
+    border: định dạng viền ( kích thước, kiểu, màu sắc)
+    object-fit: định dạng hình ảnh trên web
+    opacity: định dạng độ mờ của đối tượng
+    order: sắp xếp thứ tự đối tượng
+    overflow: xác định điều gì sẽ xảy ra nếu một thành phần box tràn nội dung.
+    z-index: chỉ số xác định thứ tự lớp theo trục x
+    align-self: có tác dụng tương tự như align-items của phần container nhưng sử dụng riêng cho từng item,
+    Animation: hiệu ứng trên website
+    Transition: tạo ra các hiệu ứng chuyển đổi trên website
+
+[NỘI DUNG BUỔI SAU]
+
+1. Phân chia cấu trúc HTML và đặt tên theo cấu trúc BEM.
+2. Style inline, extenal, intenal CSS .
+3. Nhược điểm cả style inline và các cách viết thay thế khác
+4. Các CSS selector phổ biến thường dùng: #id, .class, tagname, .class>.class, *
+5. Những thuộc tính CSS nâng cao: transfom, transition, định dạng text nâng cao (word-wrap, letter-spacing white-space, text-overflow, outline)
+6. Sắp xếp thứ tự các thuộc tính CSS
+7. Các đơn vị phổ biến, ý nghĩa và các sử dụng các loại đơn vị đo: px, %, em, rem, vh, vw,...
+8. So sánh độ ưu tiên của các kiểu import css và các css selector
+9. Lớp giả, mục đích sử dụng và một số lớp giả phổ biến: link, visited, hover, active, first-child , last-child,...

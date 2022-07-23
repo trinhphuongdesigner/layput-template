@@ -1,0 +1,147 @@
+:root {
+  --border-radius-default: 20px;
+  --color-secondary: #44566C;
+  --color-third: #E3E3E3;
+  --bg-secondary: #F3F6F6;
+  --background-gradient2: linear-gradient(153.43deg, #FA5252 16.67%, #DD2476 100%);
+}
+
+p {
+  margin: 0;
+}
+
+.bg-img {
+  background-image: url('./../img/bg.jpg');
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+.wapper {
+  display: flex;
+  margin: 240px 0;
+  position: relative;
+}
+
+.card {
+  background-color: white;
+}
+
+.sidebar {
+  width: 400px;
+  height: 800px;
+  background-color: gray;
+  border-radius: var(--border-radius-default);
+  position: relative;
+}
+
+.avatar {
+  width: 240px;
+  height: 240px;
+  background: #44566C;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: var(--border-radius-default);
+}
+
+
+.nav {
+  border-radius: 16px;
+  margin-bottom: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  padding: 30px;
+  transition: 0.5s ease-in-out;
+}
+
+.nav__item {
+  width: 84px;
+  height: 84px;
+  margin-right: 20px; 
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+.nav__item.active {
+  background: var(--background-gradient2);
+  color: white;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.nav__item:hover {
+  background: var(--color-third);
+}
+
+.nav__item.active:hover {
+  background: var(--background-gradient2);
+}
+
+.item__icon {
+  width: auto;
+  height: 25px;
+}
+
+.nav__item.active .item__icon {
+  filter: brightness(0) invert(1);
+}
+
+.item__title {
+  margin-top: 7px;
+}
+
+.main {
+  margin: 184px 0 60px 40px;
+  flex: 1;
+  height: 1200px;
+  background-color: blue;
+  border-radius: var(--border-radius-default);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.wrapper {
+  padding: 60px;
+}
+
+
+@media (max-width: 1199.99px) {
+  .nav {
+    top: 0;
+    right: unset;
+    left: -132px;
+    flex-direction: column;
+    transform: scale(0.75);
+  }
+
+  .nav:hover {
+    left: 0;
+  }
+
+  .nav__item {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

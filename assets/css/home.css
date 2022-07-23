@@ -1,0 +1,144 @@
+.container {
+  width: 840px;
+  margin: auto;
+}
+
+h1, h2 {
+  display: inline;
+}
+img {
+  width: 48px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  height: auto;
+  float: left;
+}
+
+p {
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 30px;
+}
+.provider {
+  margin-bottom: 12px;
+  float: left;
+}
+.provider__name {
+  font-weight: bold;
+  color: #0689ba;
+}
+
+.audio {
+  width: 100%;
+  height: 155px;
+  display: block;
+  background: linear-gradient(90deg, rgba(107,72,111,1) 3%, rgba(19,129,189,1) 100%);
+  margin-bottom: 12px;
+}
+
+.title--left {
+  float: left;
+}
+
+.title--right {
+  text-align: end
+}
+
+.function {
+  text-align: end;
+}
+
+.function>ul >li {
+  display: inline-block;
+}
+
+.icon {
+  width: 24px;
+}
+
+.function__btn {
+  min-width: 120px;
+  display: inline-block;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn--confirm {
+  background-color: #0689ba;
+}
+
+.btn--cancel {
+  background-color: #ccc;
+}
+
+.btn__icon {
+  width: 12px;
+}
+
+.btn__icon>img {
+  width: 12px;
+}
+
+.btn__title {
+  margin-left: 8px;
+}
+
+.function__title {
+  transition: 1s ease-in;
+}
+
+.function__title:hover {
+  color: #0689ba;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+/* ul>li:first-child {
+  text-decoration:dashed;
+  color: blue;
+}
+
+ul>li:last-child {
+  text-decoration: dotted;
+  color: red;
+} */
+
+ul>li:nth-child(3n) {
+  margin-bottom: 20px;
+}
+
+.dot__text {
+  overflow: hidden;
+  /* width:100px; */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  /* display: inline-block;
+  width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; */
+}
+#id1 {
+  color: yellow;
+}
+
+.class1 {
+  color: red !important;
+}
+
+hr {
+  margin-top: 0;
+  opacity: 0.2;
+}
+
+.lyric__box {
+  border: 1px solid #ccc;
+  padding: 20px 16px;
+}

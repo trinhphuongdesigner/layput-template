@@ -1,0 +1,50 @@
+// block
+display
+width
+height
+padding top => bottom => left => right || top => right => bottom => left
+margin top => bottom => left => right || top => right => bottom => left
+
+// position
+position
+top
+bottom
+left
+right
+
+// text
+color
+fontFamily
+fontSize,
+textDecoration
+
+// effect
+animation
+tranform
+
+// layout
+z-index
+
+[NỘI DUNG ĐÃ HỌC]
+
+1. Style inline, extenal, intenal CSS .
+2. Nhược điểm cả style inline và các cách viết thay thế khác
+4. Các đơn vị phổ biến, ý nghĩa và các sử dụng các loại đơn vị đo: px, %, em, rem, vh, vw,...
+
+7. Những thuộc tính CSS nâng cao: transform, transition, định dạng text nâng cao (word-wrap, letter-spacing white-space, text-overflow, outline)
+8. So sánh độ ưu tiên của các kiểu import css và các css selector
+9. Sắp xếp thứ tự các thuộc tính CSS
+
+3. Các CSS selector phổ biến thường dùng: #id, .class, tagname, .class>.class, *
+5. Phân chia cấu trúc HTML và đặt tên theo cấu trúc BEM.
+6. Lớp giả, mục đích sử dụng và một số lớp giả phổ biến: link, visited, hover, active, first-child , last-child, nth-child()...
+
+kết hợp nhiều thuộc tính css để định dạng
+
+[NỘI DUNG BUỔI SAU]
+
+1. Các thuộc tính của flexbox
+2. Bố cục web bằng cách kết hợp các thuộc tính flexbox
+3. Giới thiệu figma, cách lấy thông số và kết xuất tài nguyên
+4. Mục đích responsive (@media)
+5. Giới thiệu Bootstrap, sử dụng layout Bootstrap để responsive

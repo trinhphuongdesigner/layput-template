@@ -1,0 +1,28 @@
+table {
+  width: 100%;
+}
+
+/* th {
+  width: calc(100% / 3);
+} */
+
+th:not(:nth-child(3)) {
+  width: calc(100% / 4);
+}
+
+th:nth-child(3) {
+  width: calc(100% - ((100% / 4) * 2));
+}
+
+tr {
+  height: 50px;
+}
+
+tbody > tr:nth-child(2n-1) {
+  background: aliceblue;
+}
+
+tfoot > tr > td {
+  text-align: center;
+  font-weight: bold;
+}

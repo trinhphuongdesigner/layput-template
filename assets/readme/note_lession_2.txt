@@ -1,0 +1,52 @@
+- Viết lại cấu trúc 1 HTML Element lên bảng để tham chiếu
+- Giới thiệu các cách import ảnh vào 1 website
+- Yêu cầu các bạn quan sát theo khi thực hiện, thực hiện xong là thời gian thực hành
+- Giới thiệu inline là gì - block là gì?
+- Tại sao cần chia khối?
+- Tính kế thừa của các thẻ. Tại sao khi bọc một thẻ trong một thẻ khác thì thuộc tính của cha sẽ ảnh hưởng đến con
+- Nhắc nhở lưu bài lại để thực hành tiếp ở những buổi sau
+
+Các lỗi hay gặp
+  - Mở thẻ mà quên đóng
+  - Đặt Attributes trong thẻ đóng
+  - Thừa dấu cách
+
+  a test rồi nha. vì thẻ img là thẻ inline, nó không có width và hight của bản thân nó nên khi không có đoạn text (hoặc 1 thẻ block chứa content bên trong) thì nó mặc định là 0*0. vì thế cái button nó sẽ không hiện ảnh, để khắc phục e có thể dùng 2 attributes thằng im cung cấp là  width và heigh
+
+
+
+
+
+[NỘI DUNG ĐÃ HỌC]
+
+1. Bố cục website
+
+2. Các thẻ HTML thông dụng: 
+  - Thẻ định dạng văn bản: h1-h6, p, ul/ol - li, strong, u, em, small, sub, u, sup, br, textarea,...
+  - Thẻ tiện ích: div, a, img, input, button, hr, br, label, select, option.
+  - Thẻ ít dùng: iframe, audio.
+
+3. Các phím tắt:
+  - Sao chép đoạn code (ctrl + c).
+  - Sao chép dòng code (shift + alt + mũi tên lên xuống).
+  - Đảo vị trí dòng - đoạn code (alt + mũi tên lên xuống).
+  - Tạo nhiều con trỏ: giữ alt + click hoặc giữ ctrl + alt + mũi lên lên xuống.
+  - Trở về cuối dòng: end hoặc fn + end.
+
+
+
+[NỘI DUNG BUỔI SAU]
+
+1. Thẻ table.
+
+2. HTML semantic thông dụng: article, aside, header, footer, main, section, nav,...
+
+3. Phân chia thư mục chưa các file tài nguyên.
+
+4. Kiểm tra thông số thành phần bằng devtool + visbug.
+
+5. Phân chia cấu trúc HTML và đặt tên theo cấu trúc BEM.
+
+6. Những thuộc tính CSS thường dùng: định dạng text (font, font decorate), vị trí (position), spacing (margin, padding, border).
+
+7. Style inline, extenal, intenal CSS .
